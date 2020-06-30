@@ -31,7 +31,12 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				</configuration>
+					<standaloneDeployment>
+						<muleVersion>${version}</muleVersion>
+						<muleHome>${mule.home}</muleHome>        
+					</standaloneDeployment>
+                <classifier>mule-application</classifier>
+                </configuration>
 			</plugin>
 		</plugins>
 	</build>
